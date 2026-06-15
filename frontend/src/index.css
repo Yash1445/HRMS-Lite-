@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background: #edf3f7;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.three-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.72;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    linear-gradient(135deg, rgba(247, 250, 252, 0.88), rgba(226, 240, 247, 0.78) 44%, rgba(241, 247, 250, 0.88)),
+    repeating-linear-gradient(90deg, rgba(37, 99, 235, 0.035) 0 1px, transparent 1px 104px),
+    repeating-linear-gradient(0deg, rgba(8, 145, 178, 0.03) 0 1px, transparent 1px 104px);
+}
+
+.app-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(110deg, rgba(255, 255, 255, 0.52), transparent 34%),
+    linear-gradient(270deg, rgba(37, 99, 235, 0.12), transparent 48%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.08) 55%, rgba(255, 255, 255, 0.5));
+}
+
+.app-shell::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.58) 0 18%, rgba(255, 255, 255, 0.08) 44%, rgba(255, 255, 255, 0.28));
+}
+@layer components {
+  .sidebar-surface {
+    @apply border-r border-white/80 bg-white/[0.9] shadow-[16px_0_42px_rgba(15,23,42,0.07)] backdrop-blur-xl;
+  }
+
+  .mobile-header {
+    @apply border-b border-white/80 bg-white/[0.94] shadow-sm backdrop-blur-xl;
+  }
+
+  .brand-lockup {
+    @apply flex items-center gap-3;
+  }
+
+  .brand-mark {
+    @apply grid h-11 w-11 place-items-center rounded-lg bg-slate-950 text-white shadow-[0_12px_30px_rgba(15,23,42,0.20)];
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-semibold transition duration-200;
+  }
+
+  .nav-item-active {
+    @apply bg-slate-950 text-white shadow-[0_14px_28px_rgba(15,23,42,0.18)];
+  }
+
+  .nav-item-idle {
+    @apply text-slate-600 hover:bg-white hover:text-slate-950 hover:shadow-sm;
+  }
+
+  .sidebar-note {
+    @apply absolute bottom-6 left-5 right-5 rounded-lg border border-slate-200/80 bg-white/[0.9] p-4 shadow-sm;
+  }
+
+  .icon-button {
+    @apply inline-grid h-10 w-10 place-items-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:border-primary hover:text-primary;
+  }
+
+  .form-label {
+    @apply text-sm font-semibold text-slate-700;
+  }
+
+  .form-input {
+    @apply mt-2 w-full rounded-lg border border-slate-200 bg-white/95 px-3 py-2.5 text-sm font-medium text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-primary focus:bg-white focus:ring-4 focus:ring-blue-100;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-white shadow-[0_12px_24px_rgba(37,99,235,0.24)] transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-[0_16px_30px_rgba(37,99,235,0.28)] disabled:translate-y-0 disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white/90 px-4 py-2.5 text-sm font-bold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white hover:text-slate-950 disabled:translate-y-0 disabled:opacity-60;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-danger px-3 py-2.5 text-sm font-bold text-white shadow-[0_12px_22px_rgba(220,38,38,0.20)] transition hover:-translate-y-0.5 hover:bg-red-700 disabled:translate-y-0 disabled:opacity-60;
+  }
+
+  .panel {
+    @apply rounded-lg border border-white/90 bg-white/[0.96] shadow-[0_18px_48px_rgba(15,23,42,0.085)] backdrop-blur-xl;
+  }
+
+  .panel h2 {
+    @apply tracking-tight;
+  }
+
+  .page-kicker {
+    @apply mb-3 inline-flex items-center gap-2 rounded-lg border border-white/80 bg-white/[0.92] px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-slate-500 shadow-sm backdrop-blur-xl;
+  }
+
+  .page-title {
+    @apply text-3xl font-black tracking-normal text-slate-950 sm:text-4xl;
+  }
+
+  .page-description {
+    @apply mt-2 max-w-2xl text-sm font-medium leading-6 text-slate-600;
+  }
+
+  .stat-card {
+    @apply relative overflow-hidden p-5 transition duration-200 hover:-translate-y-1 hover:shadow-[0_28px_80px_rgba(15,23,42,0.14)];
+  }
+
+  .stat-card::before {
+    content: "";
+    @apply absolute inset-x-0 top-0 h-1 bg-slate-950;
+  }
+
+  .table-shell {
+    @apply panel overflow-hidden;
+  }
+
+  .table-shell thead {
+    @apply bg-slate-950 text-white shadow-[inset_0_-1px_0_rgba(255,255,255,0.08)];
+  }
+
+  .table-shell th {
+    @apply px-4 py-3 text-left text-xs font-bold uppercase tracking-[0.16em];
+  }
+
+  .table-shell td {
+    @apply px-4 py-4;
+  }
+
+  .table-shell tbody {
+    @apply divide-y divide-slate-100 bg-white/[0.96];
+  }
+
+  .table-shell tbody tr {
+    @apply transition hover:bg-blue-50/45;
+  }
+}
+@media (min-width: 1280px) {
+  .page-title {
+    max-width: 920px;
+  }
+}
+.employee-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (min-width: 1280px) {
+  .employee-grid {
+    grid-template-columns: minmax(380px, 0.82fr) minmax(620px, 1.68fr);
+  }
+}
+
+.summary-strip {
+  @apply mb-4 grid gap-3 sm:grid-cols-3;
+}
+
+.summary-pill {
+  @apply rounded-lg border border-white/80 bg-white/[0.88] px-4 py-3 shadow-sm backdrop-blur-xl;
+}
+.employee-grid > * {
+  min-width: 0;
+}
+
+.summary-strip,
+.summary-pill {
+  min-width: 0;
+  width: 100%;
+}

@@ -1,0 +1,60 @@
+[2m12:33:58 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] C:/HRMS lite/frontend/src/index.css:71:5: The `bg-white/82` class does not exist. If `bg-white/82` is a custom class, make sure it is defined within a `@layer` directive.[39m
+  Plugin: [35mvite:css[39m
+  File: [36mC:/HRMS lite/frontend/src/index.css[39m:71:4
+[33m  69 |  @layer components {
+  70 |    .sidebar-surface {
+  71 |      @apply border-r border-white/70 bg-white/82 shadow-[18px_0_50px_rgba(15,23,42,0.08)] backdrop-blur-xl;
+     |      ^
+  72 |    }
+  73 |  [39m
+      at Input.error (C:\HRMS lite\frontend\node_modules\postcss\lib\input.js:106:16)
+      at AtRule.error (C:\HRMS lite\frontend\node_modules\postcss\lib\node.js:145:32)
+      at processApply (C:\HRMS lite\frontend\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:380:29)
+      at C:\HRMS lite\frontend\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:551:9
+      at C:\HRMS lite\frontend\node_modules\tailwindcss\lib\processTailwindFeatures.js:55:50
+      at async plugins (C:\HRMS lite\frontend\node_modules\tailwindcss\lib\plugin.js:38:17)
+      at async LazyResult.runAsync (C:\HRMS lite\frontend\node_modules\postcss\lib\lazy-result.js:261:11)
+      at async compileCSS (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:36897:21)
+      at async TransformPluginContext.transform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:36170:11)
+      at async PluginContainer.transform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:49096:18)
+      at async loadAndTransform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:51929:27)
+[2m12:33:58 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] C:/HRMS lite/frontend/src/index.css:71:5: The `bg-white/82` class does not exist. If `bg-white/82` is a custom class, make sure it is defined within a `@layer` directive.[39m
+  Plugin: [35mvite:css[39m
+  File: [36mC:/HRMS lite/frontend/src/index.css[39m:71:4
+[33m  69 |  @layer components {
+  70 |    .sidebar-surface {
+  71 |      @apply border-r border-white/70 bg-white/82 shadow-[18px_0_50px_rgba(15,23,42,0.08)] backdrop-blur-xl;
+     |      ^
+  72 |    }
+  73 |  [39m
+      at Input.error (C:\HRMS lite\frontend\node_modules\postcss\lib\input.js:106:16)
+      at AtRule.error (C:\HRMS lite\frontend\node_modules\postcss\lib\node.js:145:32)
+      at processApply (C:\HRMS lite\frontend\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:380:29)
+      at C:\HRMS lite\frontend\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:551:9
+      at C:\HRMS lite\frontend\node_modules\tailwindcss\lib\processTailwindFeatures.js:55:50
+      at async plugins (C:\HRMS lite\frontend\node_modules\tailwindcss\lib\plugin.js:38:17)
+      at async LazyResult.runAsync (C:\HRMS lite\frontend\node_modules\postcss\lib\lazy-result.js:261:11)
+      at async compileCSS (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:36897:21)
+      at async TransformPluginContext.transform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:36170:11)
+      at async PluginContainer.transform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:49096:18)
+      at async loadAndTransform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:51929:27)
+[2m12:33:58 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] C:/HRMS lite/frontend/src/index.css:71:5: The `bg-white/82` class does not exist. If `bg-white/82` is a custom class, make sure it is defined within a `@layer` directive.[39m
+  Plugin: [35mvite:css[39m
+  File: [36mC:/HRMS lite/frontend/src/index.css[39m:71:4
+[33m  69 |  @layer components {
+  70 |    .sidebar-surface {
+  71 |      @apply border-r border-white/70 bg-white/82 shadow-[18px_0_50px_rgba(15,23,42,0.08)] backdrop-blur-xl;
+     |      ^
+  72 |    }
+  73 |  [39m
+      at Input.error (C:\HRMS lite\frontend\node_modules\postcss\lib\input.js:106:16)
+      at AtRule.error (C:\HRMS lite\frontend\node_modules\postcss\lib\node.js:145:32)
+      at processApply (C:\HRMS lite\frontend\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:380:29)
+      at C:\HRMS lite\frontend\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:551:9
+      at C:\HRMS lite\frontend\node_modules\tailwindcss\lib\processTailwindFeatures.js:55:50
+      at async plugins (C:\HRMS lite\frontend\node_modules\tailwindcss\lib\plugin.js:38:17)
+      at async LazyResult.runAsync (C:\HRMS lite\frontend\node_modules\postcss\lib\lazy-result.js:261:11)
+      at async compileCSS (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:36897:21)
+      at async TransformPluginContext.transform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:36170:11)
+      at async PluginContainer.transform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:49096:18)
+      at async loadAndTransform (file:///C:/HRMS%20lite/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js:51929:27)

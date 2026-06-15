@@ -1,0 +1,29 @@
+
+> hrms-lite-frontend@1.0.0 dev
+> vite --host 0.0.0.0 --host 0.0.0.0
+
+
+  [32m[1mVITE[22m v5.4.11[39m  [2mready in [0m[1m198[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.141:[1m5173[22m/[39m
+[2m12:32:48 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.jsx, /src/index.css[22m
+[2m12:32:49 pm[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mthree[32m[39m
+[2m12:32:49 pm[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m12:33:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:33:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PageHeader.jsx, /src/index.css[22m
+[2m12:33:58 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/StatCard.jsx, /src/index.css[22m
+[2m12:34:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:34:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Employees.jsx, /src/index.css[22m
+[2m12:34:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Attendance.jsx, /src/index.css[22m
+[2m12:34:32 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Dashboard.jsx, /src/index.css[22m
+[2m12:36:13 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ThreeBackground.jsx, /src/index.css[22m
+[2m12:39:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:39:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.jsx, /src/index.css[22m
+[2m12:39:45 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ThreeBackground.jsx, /src/index.css[22m
+[2m12:41:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:41:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ThreeBackground.jsx, /src/index.css[22m
+[2m12:41:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Employees.jsx, /src/index.css[22m
+[2m12:42:30 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:44:11 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:44:11 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ThreeBackground.jsx, /src/index.css[22m
